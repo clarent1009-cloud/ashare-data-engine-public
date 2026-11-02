@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Ashare Data Engine个人A股行情研究数据库的公开应用说明与Google Drive数据使用政策。"><meta name="referrer" content="strict-origin-when-cross-origin"><title>隐私政策 / Privacy Policy | Ashare Data Engine</title><style>*{box-sizing:border-box}html{color-scheme:light}body{margin:0;background:#f4f6f8;color:#192636;font:17px/1.8 system-ui,-apple-system,"Segoe UI",sans-serif}header,main,footer{max-width:900px;margin:auto;padding:24px}header{display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid #dbe2e9}header a.brand{font-weight:750;text-decoration:none;color:#192636}nav{display:flex;gap:20px;font-size:15px}a{color:#075a9c;text-underline-offset:4px}main{background:#fff;margin:28px auto;border:1px solid #dbe2e9;border-radius:12px;padding:38px}h1{font-size:clamp(28px,5vw,42px);line-height:1.25;margin:10px 0 20px;letter-spacing:-.7px}h2{font-size:22px;line-height:1.4;margin:32px 0 12px}p,ul,ol{margin:12px 0}li{margin:8px 0}.eyebrow,.meta{color:#526779;font-size:14px}.lead{font-size:20px;color:#41586b}.note{padding:16px 20px;border-left:3px solid #207b9b;background:#edf6fa;border-radius:4px}.links{display:flex;flex-wrap:wrap;gap:16px}.button{display:inline-block;background:#153c57;color:white;padding:9px 18px;border-radius:7px;text-decoration:none}code{font-size:.9em;background:#edf1f5;padding:2px 5px;border-radius:4px;overflow-wrap:anywhere}footer{font-size:14px;color:#526779;padding-bottom:36px}.en{color:#526779;font-size:15px}section{scroll-margin-top:20px}@media(max-width:640px){header{display:block}nav{margin-top:10px}main{margin:16px 12px;padding:24px}header,footer{padding:20px}}</style></head><body><header><a class="brand" href="./">Ashare Data Engine</a><nav aria-label="主导航"><a href="./">应用首页</a><a href="privacy.html">隐私政策</a></nav></header><main><p class="eyebrow">PRIVACY &amp; GOOGLE USER DATA</p>
+<h1>隐私政策<br><span lang="en">Privacy Policy</span></h1>
+<p class="meta">适用应用：Ashare Data Engine · 生效及更新日期：2026年11月2日</p>
+<p>本政策说明Ashare Data Engine在个人A股行情研究中如何使用Google Drive授权及相关数据。本应用由个人维护，仅供维护者本人及明确授权的账户使用，不是向公众开放的数据托管或证券交易服务。</p>
+<p class="en">Ashare Data Engine uses authorized Google Drive access solely to store, verify and restore the account owner's research files. Visiting this public information website does not grant access to your Google account.</p>
+<section><h2>1. 授权范围与所处理的数据</h2>
+<p>应用沿用<code>https://www.googleapis.com/auth/drive.file</code>范围。该范围限于应用创建、经用户选择或以其他受支持方式明确授权给应用的文件，不等于可读取整个Drive。本页面不增加任何Google权限。</p>
+<ul><li>项目文件：原始市场行情CSV、SQLite/Parquet增量、审计报告、备份和恢复材料。</li><li>文件及运行元数据：应用可访问文件的ID、名称、日期、大小、SHA256、提交索引、状态和必要的脱敏诊断信息。</li><li>Drive容量信息：用于检查剩余空间是否足够，不用于分析个人Drive内容。</li><li>OAuth凭据：用于在账户授权范围内连接Google Drive；不用于读取Gmail、联系人、券商账户或与本研究无关的文件。</li></ul>
+<p>此范围在技术上支持管理被授权的文件；当前研究流程使用创建、保存、列举、读取、完整性回读和恢复功能，不以本政策新增删除或全盘读取任务。</p></section>
+<section><h2>2. 使用目的与访问方式</h2>
+<p>Google授权用于保存研究文件、核对文件完整性、避免重复采集、维护来源与版本、检查容量并在故障后恢复。本应用不会出售Google用户数据，不用于广告定位，也不用于训练通用AI模型。</p>
+<p>应用访问仅发生在已授权的工作流或维护操作中。账户所有者可访问自己的研究资料；维护协助仅限账户所有者明确授权的人员或工具，并仅处理完成排障所需的文件或脱敏记录。本应用本身不把Drive文件自动发送给AI服务。用户另行选择下载、分享或分析文件，受其单独授权及相应服务政策约束。</p>
+<p>本应用遵守<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>及适用的Limited Use要求；Google数据的使用与转移限于本政策披露的功能。</p></section>
+<section><h2>3. 存储位置与第三方服务</h2>
+<p>研究资产保存在账户所有者控制的Google Drive中，并以SQLite、Parquet及原始文件等形式保存。GitHub Actions提供云端运行环境；经授权的OAuth刷新凭据存放在私有GitHub仓库的Secret中，访问令牌用于运行时认证。应用不会主动把凭据写入公开页面、公开仓库、日志或备份包。</p>
+<p>为核查故障，私有GitHub仓库中可能保留受限的日志和运行产物。本公开网站仅包含应用说明与政策，不包含私有应用源码、研究数据库、账户资料或认证凭据。</p>
+<p>Google及GitHub作为存储、运行和托管服务提供方，可能按各自政策处理必要的服务数据。账户所有者的服务设置决定具体存储位置；本应用不承诺特定国家或地区的数据驻留。</p></section>
+<section><h2>4. 保留与删除</h2>
+<p>为支持可复现研究，原始行情、版本、审计、备份和索引可长期保留，直到账户所有者主动删除。临时运行文件、日志与产物按对应工作流及平台的保留设置处理；不同类别不保证具有相同期限。</p>
+<p>账户所有者可停止工作流，删除GitHub中的相关Secret及运行产物，并在Google Drive中删除项目文件和副本。垃圾箱清空、备份副本及平台侧保留依相应服务规则处理；本应用不承诺撤销授权后立即清除所有既有副本。</p></section>
+<section><h2>5. 撤销授权与停止访问</h2>
+<ol><li>打开<a href="https://myaccount.google.com/connections">Google账户的第三方连接管理</a>，选择对应应用并移除其访问权限。</li><li>在GitHub中停用相关工作流，并按需移除现有OAuth Secret，防止后续计划任务继续尝试连接。</li><li>如需删除已保存的数据，另行删除Google Drive项目文件、备份及GitHub运行产物。</li></ol>
+<p><strong>撤销Google授权会阻止应用后续使用该授权访问Drive，但不会自动删除已经创建或下载的文件，也不会自动删除其他存储中的副本。</strong>授权失效时，自动任务应停止并记录失败；恢复访问需要账户所有者重新同意。</p></section>
+<section><h2>6. 本公开网站</h2>
+<p>本网站是GitHub Pages托管的静态说明页，没有登录表单、分析脚本、广告、追踪像素或由应用设置的Cookie，不通过页面收集Google数据。托管平台仍可能处理IP地址、请求日志及必要的安全信息，具体参见<a href="https://docs.github.com/site-policy/privacy-policies/github-privacy-statement">GitHub隐私声明</a>。</p></section>
+<section><h2>7. 联系与政策更新</h2>
+<p>一般政策问题可通过<a href="https://github.com/clarent1009-cloud/ashare-data-engine-public/issues">公开说明仓库的GitHub Issues</a>提出。不要在公开Issue中提供邮箱、Token、密钥、授权码或私有数据；涉及账户的操作应在Google和GitHub已认证界面完成。</p>
+<p>政策变化会在本页更新生效日期。新增用途或Google权限不能仅凭修改本页自动获得授权；任何需要新增授权的访问应另行取得账户所有者同意。</p></section>
+<p><a href="./">← 返回应用首页 / Application home</a></p></main><footer>Ashare Data Engine · 个人研究用途 · 更新日期：2026年11月2日<br>Public information only. Private research data and application source are not published here.</footer></body></html>
